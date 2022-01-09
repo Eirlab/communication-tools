@@ -1,4 +1,4 @@
-    \documentclass[a4paper,10pt]{article}
+\documentclass[a4paper,10pt]{article}
 \usepackage[utf8]{inputenc}
 \usepackage[T1]{fontenc}
 \usepackage[french]{babel}
@@ -13,8 +13,15 @@
 \usepackage{layout}
 \usepackage{multicol}
 \usepackage{setspace}
-\usepackage[top=6cm,bottom=2cm,left=2cm,right=2cm]{geometry}
+\usepackage[top=5cm,bottom=2cm,left=2cm,right=2cm]{geometry}
 \usepackage{amsthm}
+\usepackage{fontspec}
+\usepackage[colorlinks=true,citecolor=blue]{hyperref}
+\usepackage{url}
+\setmainfont[Path=./,
+    BoldItalicFont=calibriBI.ttf,
+    BoldFont      =calibriB.ttf,
+    ItalicFont    =calibriI.ttf]{calibriR.ttf}
 
 \setlength{\parindent}{0.785cm}
 \setlength{\parskip}{1ex plus 0.5ex minus 0.2ex}
@@ -25,21 +32,19 @@
 \usepackage{eso-pic,graphicx}
 
 \AddToShipoutPicture{%
-  \unitlength=1cm
-    {\includegraphics{back.png}}
-  }
+    \unitlength=1cm
+        {\includegraphics{back.png}}
+}
 
 \begin{document}
-\newpage
-\pagestyle{fancy}
-\lhead{}
-\chead{}
-\rhead{}
-\cfoot{}
-\newpage
+    \newpage
+    \pagestyle{fancy}
+    \lhead{}
+    \chead{}
+    \rhead{}
+    \cfoot{}
+    \newpage
 
-\thispagestyle{empty}
-Ceci est un test
-
+    \thispagestyle{empty}
 
 \end{document}
